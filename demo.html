@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .parent{
+            text-align: center;
+            border:2px solid black;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            align-content: center;
+
+
+        }
+        .parent__spacial{
+            display: flex;
+            align-items: center;
+            align-content: center;
+        }
+        .parent__one{
+            min-height: 33rem;
+            background: url(images/bg-section-top-desktop-1.svg) center top no-repeat, url(images/bg-section-bottom-desktop-1.svg) center 92% no-repeat;
+        }
+        .child{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            align-content:center ;
+            justify-content: space-around;
+            gap: 20%;
+        }
+        .child-1{
+            min-height: 13rem;
+            border:2px solid blue;
+            background-color: hsl(207, 100%, 98%);
+        }
+        .child-2{
+            min-height: 12rem;
+            border:2px solid green;
+        }
+        .child-3{
+            min-height: 13rem;
+            border:2px solid red;
+            background-color: hsl(207, 100%, 98%);
+        }
+        img{
+            width: 20%;
+        }
+    </style>
+</head>
+<body>
+    <section class="parent">
+        <section class=" parent__spacial parent__one">
+            <section class=" child child-1">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure ex harum, alias laborum ut atque! Odit, voluptatum earum excepturi culpa id error, sequi, autem officia dolore nulla itaque quas aspernatur!</p>
+                <img src="images/illustration-flowing-conversation.svg" alt="image">
+            </section>
+        </section>
+        <section class="parent__spacial parent__two">
+            <section class="child child-2">
+                
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque, facere quod voluptate suscipit deleniti a saepe quia quisquam pariatur quo minima voluptates corrupti explicabo facilis deserunt. Optio vel similique saepe.</p>
+                <img src="images/illustration-grow-together.svg" alt="">
+            </section>
+        </section>
+        <section class="parent__spacial parent__one">
+            <section class="child child-3">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus esse atque iste, perferendis libero consequatur voluptatem repudiandae modi expedita repellendus, ad tenetur quisquam. Aliquid voluptatibus ea qui, sit neque ipsam?</p>
+                <img src="images/illustration-your-users.svg" alt="">
+            </section>
+        </section>
+    </section>
+</body>
+</html>
